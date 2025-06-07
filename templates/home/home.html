@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlotlyBI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/logo.png') }}">
+</head>
+<body>
+    <div>
+        <div id="navbar">
+            <div>
+                <button type="button" class="navbar_button" data-modal="home">Home</button>
+            </div>
+            <div>
+                <button type="button" class="navbar_button" data-modal="database">Database</button>
+            </div>
+            <div class="connect-button">
+                <button type="button" class="navbar_button">Connect</button>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="group-modals">
+            <!-- Modal input colunas -->
+            <div id="modal-input" class="modal">
+                <div>
+                    <input type="text" placeholder="Dimensions">
+                </div>
+                <div>
+                    <input type="text" placeholder="Metrics">
+                </div>
+            </div>
+
+            <!-- Modal database -->
+            <div id="modal-database" class="modal">
+
+            </div>
+
+            <!-- Modal home -->
+            <div id="modal-home" class="modal">
+                <div>
+                    <input type="text" placeholder="Dimensions">
+                </div>
+                <div>
+                    <input type="text" placeholder="Metrics">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-connect-db" style="display: none">
+        <form>
+            <h3>Connect to Database</h3>
+            <input type="text" placeholder="Host">
+            <input type="text" placeholder="Port">
+            <input type="text" placeholder="User">
+            <input type="password" placeholder="Password">
+            <select>
+                <option value="postgresql">PostgreSQL</option>
+                <option value="mysql">MySQL</option>
+                <option value="sqlite">SQLite</option>">
+            </select>
+            <div>
+                <button type="submit">Connect</button>
+                <button type="button">Cancel</button>
+            </div>
+        </form>
+        
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/home-navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/home-connect.js') }}"></script>
+</body>
+</html>
