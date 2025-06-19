@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Bar Top Home : contains the connection and seelect , metrics and dimensions */
+.bar-top-home{
+    border: 1px solid #000000;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+/**/
+.div-connection-seelect{
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

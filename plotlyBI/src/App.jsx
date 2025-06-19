@@ -1,15 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+// Styles 
+import "./styles/App.css";
 
-  return (
-    <>
-    </>
-  )
+// Components
+
+export default function App() {
+    return (
+        <>
+        <div>
+            <div className="bar-top-home">
+                <div className="div-connection-seelect">
+                    <div>
+                        <button>Connect</button>
+                    </div>
+                    <div>
+                        <select>
+                            <option>Seelect</option>
+                        </select>
+                    </div>
+                </div>
+                <div className="div-metrics-dimensions">
+                    <div>
+                        <p>Dimensions</p>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Metrics</p>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </>
+    );
 }
-
-export default App
