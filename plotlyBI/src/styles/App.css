@@ -16,9 +16,40 @@
 }
 
 /**/
-.div-connection-seelect{
-    display: inline;
+.div-connection-select{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #000000;
+}
+
+.div-connection{
+    margin-bottom: 20px;
+}
+
+/**/
+.div-metrics-dimensions{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    justify-self: start;
+    justify-items: start;
+    background-color: #0000005d;
+    width: 100%;
+
+}
+
+
+/**/
+
+.div-multiple-select-metrics-dimensions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
